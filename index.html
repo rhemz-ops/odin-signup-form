@@ -8,57 +8,65 @@
 </head>
 <body>
     
-    <div id="logo-side">
-        <div>
-            <img src="images/odin-lined.png" alt="TOP logo">
-            <h1>Odin</h1>
+    <div id="body">
+        <div id="logo-side">
+            <div>
+                <img src="images/odin-lined.png" alt="TOP logo">
+                <h1>Odin</h1>
+            </div>
+            <p>Photo by <a href="https://unsplash.com/photos/blue-and-pin-abstract-painting-8uZPynIu-rQ" target="_blank">Pawel Czerwinski</a> on <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></p>
         </div>
-        <p>Photo by <a href="https://unsplash.com/photos/blue-and-pin-abstract-painting-8uZPynIu-rQ" target="_blank">Pawel Czerwinski</a> on <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></p>
-    </div>
-
-    <div id="form-side">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-Signup <i>now</i> to get started.</p>
-        <p>You <i>know</i> you want to.</p>
-
-        <div id="form-div">
-            <form action="#" method="post">
-                <fieldset>
-                    <p>Let's do this!</p>
-                    <div class="left-col">
-                        <div>
-                            <label for="first-name">first name</label>
-                            <input type="text" id="first-name" name="first-name" required>
+    
+        <div id="form-side">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+            <br>Signup <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+    
+            <div id="form-div">
+                <form action="#" method="post">
+                    
+                    <fieldset>
+                        <p>Let's do this!</p>
+                        <div id="inputs-container">
+                            <div class="left-col">
+                            
+                                <div>
+                                    <label for="first-name">first name</label>
+                                    <input type="text" id="first-name" name="first-name" required maxlength="35" placeholder="John">
+                                </div>
+                                <div>
+                                    <label for="user-email">email</label>
+                                    <input type="email" id="user-email" name="user-email" required placeholder="johndoe@email.com">
+                                </div>
+                                <div>
+                                    <label for="password">password</label>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <div>
+                                    <label for="user-last-name">last name</label>
+                                    <input type="text" id="user-last-name" name="user-last-name" required maxlength="35" placeholder="Doe">
+                                </div>
+                                <div>
+                                    <label for="user-phone-number">phone number</label>
+                                    <input type="tel" id="user-phone-number" name="user-phone-number" required>
+                                </div>
+                                <div>
+                                    <label for="user-password-confirm">confirm password</label>
+                                    <input type="password" id="user-password-confirm" name="user-password-confirm" required>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <label for="user-email">email</label>
-                            <input type="email" id="user-email" name="user-email" required>
-                        </div>
-                        <div>
-                            <label for="password">password</label>
-                            <input type="password" id="password" name="password" required>
-                        </div>
-                    </div>
-                    <div class="right-col">
-                        <div>
-                            <label for="user-last-name">last name</label>
-                            <input type="text" id="user-last-name" name="user-last-name" required>
-                        </div>
-                        <div>
-                            <label for="user-phone-number">phone number</label>
-                            <input type="tel" id="user-phone-number" name="user-phone-number">
-                        </div>
-                        <div>
-                            <label for="user-password-confirm">confirm password</label>
-                            <input type="password" id="user-password-confirm" name="user-password-confirm">
-                        </div>
-                    </div>
-                </fieldset>
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
-            </form>
+                       
+                    </fieldset>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </form>
+            </div>
         </div>
     </div>
+    
 
 </body>
 </html>

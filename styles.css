@@ -1,7 +1,167 @@
-img {
-    background-color: black;
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-p {
-    white-space: pre;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #5f2d04;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+#body {
+    max-width: 80vw;
+    min-height: 90vh;
+    display: flex;
+}
+
+#logo-side {
+    flex: 1;
+    background-image: url(images/bg-pawel-czerwinski-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#logo-side div {
+    background-color: #54207e80;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+#logo-side div img {
+    width: clamp(4rem, 20%, 80px);
+}
+
+#logo-side h1 {
+    font-family: 'norsebold', sans-serif;
+    font-size: clamp(4rem, 5vw, 100px);
+}
+
+#logo-side p {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-bottom: 0.5rem;
+
+}
+
+#logo-side p a{
+    color: black;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+#form-side {
+    background-color: #f0f8ff;
+    flex: 2;
+}
+
+#form-side > p:first-child {
+    margin-top: 4rem;
+    font-weight: bold;
+    max-width: 60ch;
+}
+
+#form-side >  p, form > p, fieldset > p {
+    padding-left: 3rem;
+}
+
+button {
+    margin: 2rem 0 1rem 3rem;
+    background-color: #ffc7d1;
+    padding: 12px 44px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#form-side p ~ p{ 
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: #dfeffd;
+    border: none;
+    box-shadow: 0px 10px 10px rgb(185, 185, 185);
+    margin-top: 2rem;
+    
+}
+
+fieldset p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+fieldset input {
+    display: block;
+    width: clamp(150px, 100%, 240px);
+    padding: .3rem;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+fieldset input:focus {
+    outline: 1px solid rgb(43, 136, 243);
+    box-shadow: 0 0 5px 0 rgb(43, 136, 243);
+}
+
+fieldset input[type="password"]:invalid {
+    outline: 1px solid rgb(255, 0, 0);
+    box-shadow: 0 0 5px 0 rgb(255, 0, 0);
+}
+
+fieldset #inputs-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 3rem 2rem 3rem;
+}
+
+
+
+.left-col p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.left-col > div, .right-col > div {
+    margin-bottom: 1rem;
+}
+
+.left-col label, .right-col label {
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+form p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #f19aaa;
 }
