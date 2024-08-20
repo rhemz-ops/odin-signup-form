@@ -15,7 +15,7 @@
 
 
 body {
-    background-color: #5f2d04;
+    background-color: #3a1d0a;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     min-height: 100vh;
@@ -26,35 +26,39 @@ body {
 }
 
 #body {
-    max-width: 80vw;
+    max-width: 85vw;
     min-height: 90vh;
     display: flex;
+    box-shadow: 10px 10px 6px 2px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 #logo-side {
     flex: 1;
-    background-image: url(images/bg-pawel-czerwinski-unsplash.jpg);
+    background-image: url(images/bg-brigitte-tohm.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
 #logo-side div {
-    background-color: #54207e80;
+    background-color: #00000071;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-block: 1rem;
     margin-top: 8rem;
 }
 
 #logo-side div img {
-    width: clamp(4rem, 20%, 80px);
+    width: clamp(2rem, 20%, 80px);
 }
 
 #logo-side h1 {
     font-family: 'norsebold', sans-serif;
-    font-size: clamp(4rem, 5vw, 100px);
+    font-size: clamp(2.5rem, 3vw, 100px);
 }
 
 #logo-side p {
@@ -65,11 +69,11 @@ body {
     bottom: 0;
     margin: auto;
     margin-bottom: 0.5rem;
-
+    color: white;
 }
 
 #logo-side p a{
-    color: black;
+    color: white;
 }
 
 button, input, select, textarea {
@@ -78,7 +82,7 @@ button, input, select, textarea {
 }
 
 #form-side {
-    background-color: #f0f8ff;
+    background-color: #F8EDE3;
     flex: 2;
 }
 
@@ -94,7 +98,8 @@ button, input, select, textarea {
 
 button {
     margin: 2rem 0 1rem 3rem;
-    background-color: #ffc7d1;
+    background-color: #8D493A;
+    color: white;
     padding: 12px 44px;
     font-weight: bold;
     border: none;
@@ -108,7 +113,7 @@ button {
 }
 
 fieldset {
-    background-color: #dfeffd;
+    background-color: #DFD3C3;
     border: none;
     box-shadow: 0px 10px 10px rgb(185, 185, 185);
     margin-top: 2rem;
@@ -130,6 +135,11 @@ fieldset input {
 fieldset input:focus {
     outline: 1px solid rgb(43, 136, 243);
     box-shadow: 0 0 5px 0 rgb(43, 136, 243);
+}
+
+fieldset input:focus:valid {
+    outline: 1px solid greenyellow;
+    box-shadow: 0 0 5px 0 greenyellow;
 }
 
 fieldset input[type="password"]:invalid {
@@ -163,5 +173,5 @@ fieldset #inputs-container {
 form p a {
     text-decoration: none;
     font-weight: 600;
-    color: #f19aaa;
+    color: #8D493A;
 }
